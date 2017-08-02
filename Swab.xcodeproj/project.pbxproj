@@ -11,6 +11,12 @@
 		C96AFF261E8EF2B000282AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF251E8EF2B000282AE2 /* ViewController.swift */; };
 		C96AFF281E8EF2B000282AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96AFF271E8EF2B000282AE2 /* Assets.xcassets */; };
 		C96AFF2B1E8EF2B000282AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96AFF291E8EF2B000282AE2 /* Main.storyboard */; };
+		C96AFF341E8EF34100282AE2 /* HoverCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF331E8EF34100282AE2 /* HoverCloseButton.swift */; };
+		C96AFF361E8EF38200282AE2 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF351E8EF38200282AE2 /* TabView.swift */; };
+		C96AFF381E8EF3C200282AE2 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF371E8EF3C200282AE2 /* TabController.swift */; };
+		C96AFF3A1E8EF41800282AE2 /* TabStripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF391E8EF41800282AE2 /* TabStripController.swift */; };
+		C96AFF3C1E8EF46100282AE2 /* TabStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF3B1E8EF46100282AE2 /* TabStripView.swift */; };
+		C96AFF3E1E8EF4A100282AE2 /* TabStripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AFF3D1E8EF4A100282AE2 /* TabStripModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		C96AFF271E8EF2B000282AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96AFF2A1E8EF2B000282AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C96AFF2C1E8EF2B000282AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96AFF331E8EF34100282AE2 /* HoverCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoverCloseButton.swift; path = Tabs/HoverCloseButton.swift; sourceTree = "<group>"; };
+		C96AFF351E8EF38200282AE2 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Tabs/TabView.swift; sourceTree = "<group>"; };
+		C96AFF371E8EF3C200282AE2 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabController.swift; path = Tabs/TabController.swift; sourceTree = "<group>"; };
+		C96AFF391E8EF41800282AE2 /* TabStripController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabStripController.swift; path = Tabs/TabStripController.swift; sourceTree = "<group>"; };
+		C96AFF3B1E8EF46100282AE2 /* TabStripView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabStripView.swift; path = Tabs/TabStripView.swift; sourceTree = "<group>"; };
+		C96AFF3D1E8EF4A100282AE2 /* TabStripModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabStripModel.swift; path = Tabs/TabStripModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 		C96AFF221E8EF2B000282AE2 /* Swab */ = {
 			isa = PBXGroup;
 			children = (
+				C96AFF321E8EF31A00282AE2 /* Tabs */,
 				C96AFF231E8EF2B000282AE2 /* AppDelegate.swift */,
 				C96AFF251E8EF2B000282AE2 /* ViewController.swift */,
 				C96AFF271E8EF2B000282AE2 /* Assets.xcassets */,
@@ -59,6 +72,19 @@
 				C96AFF2C1E8EF2B000282AE2 /* Info.plist */,
 			);
 			path = Swab;
+			sourceTree = "<group>";
+		};
+		C96AFF321E8EF31A00282AE2 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				C96AFF331E8EF34100282AE2 /* HoverCloseButton.swift */,
+				C96AFF351E8EF38200282AE2 /* TabView.swift */,
+				C96AFF371E8EF3C200282AE2 /* TabController.swift */,
+				C96AFF391E8EF41800282AE2 /* TabStripController.swift */,
+				C96AFF3B1E8EF46100282AE2 /* TabStripView.swift */,
+				C96AFF3D1E8EF4A100282AE2 /* TabStripModel.swift */,
+			);
+			name = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96AFF381E8EF3C200282AE2 /* TabController.swift in Sources */,
+				C96AFF341E8EF34100282AE2 /* HoverCloseButton.swift in Sources */,
+				C96AFF3A1E8EF41800282AE2 /* TabStripController.swift in Sources */,
 				C96AFF261E8EF2B000282AE2 /* ViewController.swift in Sources */,
+				C96AFF361E8EF38200282AE2 /* TabView.swift in Sources */,
+				C96AFF3E1E8EF4A100282AE2 /* TabStripModel.swift in Sources */,
 				C96AFF241E8EF2B000282AE2 /* AppDelegate.swift in Sources */,
+				C96AFF3C1E8EF46100282AE2 /* TabStripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
